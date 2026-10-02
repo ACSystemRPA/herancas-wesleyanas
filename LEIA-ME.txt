@@ -12,28 +12,31 @@ favicon.png              Ícone do separador do navegador
 Como publicar no site
 ---------------------
 1. Envie a pasta "herancas-wesleyanas" inteira para o servidor do site,
-   por exemplo para:  https://imw.pt/livreto/herancas-wesleyanas/
+   endereço público: https://livreto.imw.pt/
    (mantenha a estrutura de pastas tal como está).
 2. Abra esse endereço no navegador para confirmar que o livreto aparece.
 3. Na página da IMW Valença, crie um botão/ligação para esse endereço.
 
 Opcional - incorporar dentro de outra página (iframe)
 -----------------------------------------------------
-<iframe src="https://imw.pt/livreto/herancas-wesleyanas/"
+<iframe src="https://livreto.imw.pt/"
         title="Livreto Heranças Wesleyanas"
         style="width:100%; height:85vh; border:0; border-radius:12px;"
         allow="fullscreen" loading="lazy"></iframe>
 
 Pré-visualização nas redes sociais
 ----------------------------------
-Depois de saber o endereço final, troque em index.html:
-  <meta property="og:image" content="capa.jpg">
-pelo endereço completo, por exemplo:
-  <meta property="og:image" content="https://imw.pt/livreto/herancas-wesleyanas/capa.jpg">
+O pacote publicado deve ser gerado com --site-url https://livreto.imw.pt/.
+Os metadados de partilha usam https://livreto.imw.pt/capa.jpg.
+
+GitHub Pages
+------------
+Na pasta de publicação, mantenha CNAME com livreto.imw.pt e .nojekyll.
+Confirme a publicação por HTTPS depois de enviar o commit ao repositório.
 
 Ligações diretas a uma página
 -----------------------------
-Acrescente #pagina-N ao endereço. Ex.: .../herancas-wesleyanas/#pagina-26
+Acrescente #pagina-N ao endereço. Ex.: https://livreto.imw.pt/#pagina-26
 abre na História da IMW em Portugal.
 
 Testar no computador
